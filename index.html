@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="gutter-right logo">
+            <img src="assets/big-logo.png"/>
+        </div>
+    </header>
+    <main>
+        <section class="main-section">
+            <img class="main-logo" src="assets/alchemy-logo.png"/>
+            <h2>
+                Welcome to Alchemy Bootstrap!
+            </h2>
+
+
+        <label>
+            <input type="radio" name="choice" value="rock"  /> 
+            <img src="./assets/rock.jpg"  class="image" >
+        </label>
+        <br>
+        <label>
+            <input type=radio name="choice"  value="scissors" /> 
+            <img src="./assets/scisors.jpg" class="image">
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="choice" value="paper" /> 
+            <img src="./assets/paper.jpg" class="image">
+        </label>
+        <br>
+        <br>
+            <button id="ready" class="button">Ready</button>
+            <br>
+            <span id="results"> </span>
+            <span id="wins">Wins!</span>
+            <span id="total">Total Games Played</span>
+            <span id="percent">% of Wins</span>
+           
+        </section>
+    </main>
+    <footer>
+        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
