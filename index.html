@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="gutter-right logo">
+            <img src="./assets/fireball.png"/>
+        </div>
+    </header>
+    <main>
+        <section class="main-section">
+            <img class="main-logo" src="./assets/fireball.png"/>
+            <h2>
+                Defeat the Evil Litch!!
+            </h2>
+            <span class="instructions">
+                Well met Adventurer! The Dark litch Svether is attacking! below you are the tools
+                to defeat him! Be warned the litch is cunning. You have the option of the three tools below!
+                the ROCK of Yssindil!! a powerful artifact it will defeat the scissors! The next item is the
+                SCISSORS of Drogmire, Dwarven made and elven enchanted! you can use this to defeat the Scroll!
+                Your last item is the Scroll of Power!!! You can use this to defeat the ROCK! 
+                Once you are ready Pick your Tool! Your selection will glow blue! and Attack!!!!!
+            </span>
+        </section>
+        <label>
+            <input type="radio" name="choice" value="rock"  /> 
+            <img src="./assets/rock.jpg"  class="image" >
+        </label>
+        <br>
+        <label>
+            <input type=radio name="choice"  value="scissors" /> 
+            <img src="./assets/scisors.jpg" class="image">
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="choice" value="paper" /> 
+            <img src="./assets/paper.jpg" class="image">
+        </label>
+        <br>
+        <br>
+            <button id="ready" class="button">Attack!</button>
+            <br>
+        <section class="background">  
+            <span id="results"> </span>
+            <span id="wins">Wins! 0</span>
+            <span id="total">Total Games Played 0</span>
+            <span id="percent">0% of Wins</span>
+        </section> 
+        <section>
+           <a href="./index.html"> <button id="reset" class="reset">Reset</button></a>
+        </section>  
+        </section>
+    </main>
+    <footer>
+        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
