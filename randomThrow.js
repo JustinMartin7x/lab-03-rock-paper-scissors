@@ -8,6 +8,5 @@ export function randomThrow() {
     }
     if (thrown === 3) {
         return 'scissors';    
-
     }
 }
