@@ -4,8 +4,9 @@ const readyButton = document.getElementById('ready');
 const totalSpan = document.getElementById('total');
 const percentSpan = document.getElementById('percent');
 const winsSpan = document.getElementById('wins');
+const tied = document.getElementById('tied');
 // const userGuessButton = document.querySelector(':checked');
-import { randomThrow } from './utils.js';
+import { randomThrow } from './randomThrow.js';
 import { doesUserWin } from './check-results.js';
 // console.log(readyButton, totalSpan, percentSpan, userGuess);
 // initialize state
@@ -27,9 +28,12 @@ readyButton.addEventListener('click', () => {
         results.textContent = 'Arggg!! you tied!!';
         gamesTied++;
     }
-    const percent = ((totalWins / gamesPlayed) * 100);
+    const div = (totalWins / gamesPlayed);
+    const percent = (div * 100).toFixed(0);
     winsSpan.textContent = `Wins! ${totalWins}`;
     totalSpan.textContent = `Total Games Played ${gamesPlayed}`;
     percentSpan.textContent = `${percent} % of Games Won!`;
+    tied.textContent = `${gamesTied} Tied Games!`;
 });
+
 
